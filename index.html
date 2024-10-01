@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head><title>SMK N 5 Surakarta</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style1.css">
+<link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+
+</head>
+<body style="font-family:Verdana;color:#aaaaaa;" >
+<!--////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////-->
+<!--waktu-->
+
+<div class="waktu">
+    <waktu >Tanggal/Waktu: <span id="tanggalwaktu"></span></waktu>
+        <script>
+            var tw = new Date();
+            if (tw.getTimezoneOffset() == 0) (a=tw.getTime() + ( 7 *60*60*1000))
+            else (a=tw.getTime());
+            tw.setTime(a);
+            var tahun= tw.getFullYear ();
+            var hari= tw.getDay ();
+            var bulan= tw.getMonth ();
+            var tanggal= tw.getDate ();
+            var hariarray=new Array("Minggu,","Senin,","Selasa,","Rabu,","Kamis,","Jum'at,","Sabtu,");
+            var bulanarray=new Array("Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","Nopember","Desember");
+            document.getElementById("tanggalwaktu").innerHTML = hariarray[hari]+" "+tanggal+" "+bulanarray[bulan]+" "+tahun+" Jam " + ((tw.getHours() < 10) ? "0" : "") + tw.getHours() + ":" + ((tw.getMinutes() < 10)? "0" : "") + tw.getMinutes() + (" W.I.B ");
+        </script>
+    </div>
+<!--////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////-->
+<!--logo dan search bar-->
+<div style="background-color:#e5e5e5;padding:15px;text-align:center;">
+  <div class="topnav">
+      <img src="assets/image/banner-smkn5.png" width="50%" height="10%" >
+  <div class="search-container">
+    <form action="#">
+      <input type="text" placeholder="Ketikan sesuatu.." name="search">
+      <button type="submit"><a>Cari</a></button>
+    </form>
+  </div>
+</div>
+</div>
+<!--////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////-->
+<!--Menu-->
+<div class="topnav1" id="myTopnav1">
+  <a href="index.html"  style="background-color: white;color: black;">Home</a>
+  <div class="dropdown">
+    <button class="dropbtn">Profil
+    </button>
+    <div class="dropdown-content">
+      <a href="visimisi.html">Visi, Misi, dan Tujuan Sekolah</a>
+      <a href="sejarah.html">Sejarah Sekolah</a>
+      <a href="struktur.html">Struktur Sekolah</a>
+    </div>
+  </div> 
+  <a href="contac.html">Contac</a> 
+  <a href="galeri.html">Gallery</a>
+  <div class="dropdown">
+    <button class="dropbtn">Program
+    </button>
+    <div class="dropdown-content">
+      <a href="rpl.html">Rekayasa Perangkat Lunak</a>
+      <a href="sipil.html">Teknik Sipil</a>
+      <a href="elektro.html">Teknik Elektronika Industri</a>
+      <a href="otomotif.html">Teknik Otomotif</a>
+      <a href="mesin.html">Teknik Permesinan</a>
+      <a href="listrik.html">Teknik instalasi Tenaga Listrik</a>
+    </div>
+  </div> 
+  <div class="dropdown">
+    <button class="dropbtn">Fasilitas
+    </button>
+    <div class="dropdown-content">
+      <a href="masjid.html">Masjid</a>
+      <a href="perpustakaan.html">Perpustakaan</a>
+      <a href="sarana.html">Sarana dan Prasarana</a>
+      <a href="pembelajaran.html">Sarana Pembelajaran</a>
+      <a href="mikrotik.html">Mikrotik Akademi</a>
+    </div>
+  </div> 
+  <a href="about.html">About</a>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<!--////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////-->
+<!--Main-->
+   
+<div style="overflow:auto">
+<div class="isi">
+    
+<!--////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////-->
+<!--foto utama-->
+<div class="fotoutama">
+  <img src="assets/image/fotoutama2.png" alt="fotoutama" style="width:100%;">
+  <div class="content">
+    <h1>SMK NEGERI 5 SURAKARTA</h1>
+  </div>
+    
+    
+
+ <!--////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////-->
+<!--JURUSAN-->   
+
+  <div class="card">
+    <h3><b>PROGRAM KEAHLIAN</b></h3><hr color="black" size="7" width="400px">
+    <table style="padding: inherit;margin: auto; width: 90% ; height: 50%; text-align: left;">
+    <tr>
+    <td width="60%" height="33px"><p><img src="assets/image/icon/rpl.jpg" width="40px" height="40px">Rekayasa Perangkat Lunak</p></td>
+    <td width="40%" height="33px"><p><img src="assets/image/icon/sipil.jpg" width="40px" height="40px">Teknik Sipil</p></td>
+    </tr>
+    <tr>
+    <td width="60%" height="33px"><p><img src="assets/image/icon/elektro.jpg" width="40px" height="40px">Teknik Elektronika Industri</p></td>
+    <td width="40%" height="33px"><p><img src="assets/image/icon/otomotif.jpg" width="40px" height="40px">Teknik Otomotif</p></td>
+    </tr>
+    <tr>
+    <td width="60%" height="33px"><p><img src="assets/image/icon/mesin.jpg" width="40px" height="40px">Teknik Permesinan</p></td>
+    <td width="40%" height="33px"><p><img src="assets/image/icon/listrik.jpg" width="40px" height="40px">Teknik Instalasi Tenaga Listrik</p></td>
+    </tr>
+    </table>
+    
+  </div>
+</div>
+</div>
+     
+<!--////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////-->
+<!--karttu jurusan-->
+<div class="article">
+    <img src="assets/image/smk5depan.jpeg" style="float: left ;padding: inherit;margin-bottom: 10px; margin-top: 20px;margin-right: 10px; width: 50%"><p style="float: right"><h2>TENTANG SEKOLAH</h2><hr color="black" size="4" width="30%" align="left">
+    <p>STM Negeri 2 sekarang SMK Negeri 5 Surakarta berdiri sejak tanggal 1 Agustus 1965 dengan nama STM Negeri di Purwonegaran Surakarta. Berdasarkan surat keputusan Menteri P dan K Republik Indonesia no 99/ Sek. Dit. Pt/ 71/ 1967 tanggal 1/8/1987. STM Purwonegaran Surakarta diganti menjadi STM Begeri II Surakarta. Berdasarkan Surat Keputusan Menteri Pendidikan dan Kebudayaan Republik Indonesia N0. 036/01/1997. Tanggal 7 Maret 1887 tentang Perubahan Nomenklatur SMKTA menjadi SMK. Maka STM Negeri II Surakarta menjadi SMKN 5 Surakarta Ditetapkan tanggal 7 Februari 1997.</p><p>SMKN 5 Surakarta sejak tanggal 13 Juni 2006 menerapkan sistim manajemen mutu. SMM ISO : 9001:2000 sejak tanggal 14 Mei 2009.</p>
+</div>
+</div>
+
+<!--////////////////////////////////////////
+///////////////////////////////////////////////////////////////////////////////
+///////////////////////////////////////-->
+<!--Berita Terbaru-->
+<div class="berita">  
+    <h2 align="center">BERITA TERBARU</h2><hr size="4" color="black" width="30%">
+    
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="assets/image/berita1.jpeg" alt="berita1" width="600" height="400">
+  </a>
+  <div class="desc">Nadiem Dorong Sekolah Dibuka</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="assets/image/berita2.png" alt="berita2" width="600" height="400">
+  </a>
+  <div class="desc">Aturan dan Syarat CPNS</div>
+</div>
+    
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="assets/image/berita3.jpeg" alt="berita3" width="600" height="400">
+  </a>
+  <div class="desc">Sekolah Bakal Kena PPN?</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="assets/image/berita4.jpg" alt="berita4" width="600" height="400">
+  </a>
+  <div class="desc">Jadwal Daftar Ulang SBMPTN</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="#">
+    <img src="assets/image/berita5.jpeg" alt="berita5" width="600" height="400">
+  </a>
+  <div class="desc" >Sekolah Tatap Muka Jakarta</div>
+</div>
+
+</div>
+    
+
+
+<div style="color: black;font-size: 20px; background-color:#e5e5e5;text-align:center;padding:10px;margin-top:7px; float: left; width: 100%">&copy;Copyright by Ardhan & Ryzal 2021 - ITB AAS</div>
+
+</body>
+</html>
